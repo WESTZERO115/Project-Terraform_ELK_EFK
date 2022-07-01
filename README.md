@@ -1,1 +1,2 @@
-# Project-Terraform_ELK_EFK
+# 테라폼으로 인프라 구축하고 ELK|EFK 모니터링 스택을 배포하는 프로젝트
+
