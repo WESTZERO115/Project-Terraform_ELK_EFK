@@ -5,6 +5,12 @@
 ## 적용 기술
 <img src="https://user-images.githubusercontent.com/65750746/177522606-f00fc607-3fb1-4f9e-9b33-d40cf3496e87.png" width="700" height="300"/>
 Logstash는 모놀리식한 시스템의 로깅 파이프라인으로 주로 사용하고, Fluentd는 마이크로 서비스 아키텍처를 사용한 시스템에서 주로 사용한다.
+<br/>
+
+### - EFK 스택 (ElasticSearch + Fleuntd + Kibana)
+
+### - ELK 스택 (ElasticSearch + Logstash + Kibana) + Kafka
+트래픽이 몰리면 Logstash, Elasticsearch 만으로는 부하를 견디기 힘들기 때문에 ELK 스택의 경우 카프카를 연동하였다.
 
 ## 구성도
 ## 활용분야 (장점, 특별한점) 
