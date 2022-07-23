@@ -2,6 +2,14 @@
 
 
 ## 주요 기능
+1. IaC - Terraform으로 AWS의 관리형 쿠버네티스인 EKS를 구축
+
+2. Kubernetes & ELK | EFK
+</br>2.1  위에 EFK Stack 구축, Nginx pod의 로그 수집 
+</br>2.2 Filebeat + Kafka + ELK Stack 구축, EKS에 배포한 Nginx 웹 서버 로그 수집 
+
+3. Visualization & Analysis - Kibana 대시보드를 통해 로그를 시각화하여 분석
+
 ## 적용 기술
 <img src="https://user-images.githubusercontent.com/65750746/177522606-f00fc607-3fb1-4f9e-9b33-d40cf3496e87.png" width="700" height="300"/>
 Logstash는 모놀리식한 시스템의 로깅 파이프라인으로 주로 사용하고, Fluentd는 마이크로 서비스 아키텍처를 사용한 시스템에서 주로 사용한다.
@@ -15,6 +23,7 @@ Logstash는 모놀리식한 시스템의 로깅 파이프라인으로 주로 사
 ## 구성도
 ## 활용분야 (장점, 특별한점) 
 ## 결과물 
+
 
 ### Contributors
 <table>
