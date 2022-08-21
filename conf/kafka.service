@@ -1,0 +1,18 @@
+# kafka 데몬 등록하기
+# vi /etc/systemd/system/kafka.service
+
+/etc/systemd/system/kafka.service
+
+[Unit]
+Description=Apache Kafka Service
+Documentation=http://kafka.apache.org/documentation.html
+Requires=zookeeper.service
+
+[Service]
+Type=simple
+ExecStart=/opt/kafka_2.12-3.2.0/bin/kafka-server-start.sh /opt/kafka_2.12-3.2.0/config/server.properties
+ExecStop=/opt/kafka_2.12-3.2.0/bin/kafka-server-stop.sh
+
+[Install]
+WantedBy=multi-user.target
+~

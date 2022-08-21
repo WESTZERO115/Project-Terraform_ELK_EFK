@@ -1,0 +1,18 @@
+# zookeeper 데몬 등록하기
+# /etc/systemd/system/zookeeper.service
+
+[Unit]
+Description=Apache Zookeeper service
+Documentation=http://zookeeper.apache.org
+Requires=network.target remote-fs.target
+After=network.target remote-fs.target
+
+[Service]
+Type=simple
+ExecStart=/opt/kafka_2.12-3.2.0/bin/zookeeper-server-start.sh /opt/kafka_2.12-3.2.0/config/zookeeper.properties
+ExecStop=/opt/kafka_2.12-3.2.0/bin/zookeeper-server-stop.sh
+Restart=on-abnormal
+
+[Install]
+WantedBy=multi-user.target
+~
