@@ -1,3 +1,4 @@
+# zookeeper 데몬 등록하기
 # /etc/systemd/system/zookeeper.service
 
 [Unit]
