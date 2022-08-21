@@ -1,4 +1,5 @@
-# /etc/systemd/system/kafka.service
+# kafka 데몬 등록하기
+# vi /etc/systemd/system/kafka.service
 
 /etc/systemd/system/kafka.service
 
